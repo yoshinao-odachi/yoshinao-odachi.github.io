@@ -10,19 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <title>私のページ</title>
   </head>
-  <body style="overflow: hidden;">
-    <script>
-      window.onload = function(){
-        var n = document.body.clientHeight;
-        sendHeight();
-        function sendHeight(){
-          parent.postMessage(n, "*");
-        }
-      }
-      $(window).resize(function() {
-        var mv = document.body.clientHeight;
-      });
-    </script>
+  <body>
     <div class="jumbotron">
     <h1 class="display-4 wow bounceIn" data-wow-duration="1.0s">
       <i class="fas fa-comments"></i>
