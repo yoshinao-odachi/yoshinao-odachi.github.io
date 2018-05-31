@@ -9,7 +9,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <title>私のページ</title>
   </head>
-  <body>
+  <body style="overflow: hidden;">
+    <script>
+      sendHeight();
+      function sendHeight(){
+        var h = document.documentElement.scrollHeight;
+        parent.postMessage(h, "*");
+      }
+      console.log(h);
+    </script>
     <div class="jumbotron">
     <h1 class="display-4 wow bounceIn" data-wow-duration="1.0s">
       <i class="fas fa-comments"></i>
